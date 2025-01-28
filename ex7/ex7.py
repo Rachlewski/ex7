@@ -499,15 +499,15 @@ def main_menu():
 
 def new_pokedex():
     global OWNER_ROOT
-    owner_name = input("Owner name: ")
+    owner_name = input("Enter owner name:")
     print("Choose your starter Pokemon:")
     print("1) Treecko")
     print("2) Torchic")
     print("3) Mudkip")
-    first_pokemon = read_int_safe("Your choice: ")
+    first_pokemon = read_int_safe("Your choice:")
     while first_pokemon < 1 or first_pokemon > 3:
         print("Invalid choice. Please try again.")
-        first_pokemon = read_int_safe("Your choice: ")
+        first_pokemon = read_int_safe("Your choice:")
     if first_pokemon == 1:
         first_pokemon = HONEN_DATA_BY_NAME["Treecko"]
     elif first_pokemon == 2:

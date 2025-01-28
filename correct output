@@ -1,0 +1,363 @@
+=== Main Menu ===
+1. New Pokedex
+2. Existing Pokedex
+3. Delete a Pokedex
+4. Display owners by number of Pokemon
+5. Print All
+6. Exit
+Your choice: Owner name: Choose your starter Pokemon:
+1) Treecko
+2) Torchic
+3) Mudkip
+Your choice: New Pokedex created for Secret name with starter Torchic.
+=== Main Menu ===
+1. New Pokedex
+2. Existing Pokedex
+3. Delete a Pokedex
+4. Display owners by number of Pokemon
+5. Print All
+6. Exit
+Your choice: Owner name: Choose your starter Pokemon:
+1) Treecko
+2) Torchic
+3) Mudkip
+Your choice: New Pokedex created for None-Secret name with starter Mudkip.
+=== Main Menu ===
+1. New Pokedex
+2. Existing Pokedex
+3. Delete a Pokedex
+4. Display owners by number of Pokemon
+5. Print All
+6. Exit
+Your choice: === The Owners we have, sorted by number of Pokemons ===
+Owner: None-Secret name (has 1 Pokemon)
+Owner: Secret name (has 1 Pokemon)
+=== Main Menu ===
+1. New Pokedex
+2. Existing Pokedex
+3. Delete a Pokedex
+4. Display owners by number of Pokemon
+5. Print All
+6. Exit
+Your choice: 1) BFS
+2) Pre-Order
+3) In-Order
+4) Post-Order
+Your choice:
+Owner: Secret name
+ID: 4, Name: Torchic, Type: Fire, HP: 45, Attack: 60, Can Evolve: TRUE
+Owner: None-Secret name
+ID: 7, Name: Mudkip, Type: Water, HP: 50, Attack: 70, Can Evolve: TRUE
+=== Main Menu ===
+1. New Pokedex
+2. Existing Pokedex
+3. Delete a Pokedex
+4. Display owners by number of Pokemon
+5. Print All
+6. Exit
+Your choice: Owner name: Choose your starter Pokemon:
+1) Treecko
+2) Torchic
+3) Mudkip
+Your choice: New Pokedex created for taric with starter Treecko.
+=== Main Menu ===
+1. New Pokedex
+2. Existing Pokedex
+3. Delete a Pokedex
+4. Display owners by number of Pokemon
+5. Print All
+6. Exit
+Your choice: Owner name:
+-- taric's Pokedex Menu --
+1. Add Pokemon
+2. Display Pokedex
+3. Release Pokemon
+4. Evolve Pokemon
+5. Back to Main
+Your choice: Enter Pokemon ID to add: Pokemon Grovyle (ID 2) added to taric's Pokedex.
+-- taric's Pokedex Menu --
+1. Add Pokemon
+2. Display Pokedex
+3. Release Pokemon
+4. Evolve Pokemon
+5. Back to Main
+Your choice: Enter Pokemon ID to add: Pokemon Sceptile (ID 3) added to taric's Pokedex.
+-- taric's Pokedex Menu --
+1. Add Pokemon
+2. Display Pokedex
+3. Release Pokemon
+4. Evolve Pokemon
+5. Back to Main
+Your choice: Enter Pokemon ID to add: Pokemon Torchic (ID 4) added to taric's Pokedex.
+-- taric's Pokedex Menu --
+1. Add Pokemon
+2. Display Pokedex
+3. Release Pokemon
+4. Evolve Pokemon
+5. Back to Main
+Your choice: Enter Pokemon ID to add: Pokemon Combusken (ID 5) added to taric's Pokedex.
+-- taric's Pokedex Menu --
+1. Add Pokemon
+2. Display Pokedex
+3. Release Pokemon
+4. Evolve Pokemon
+5. Back to Main
+Your choice: Enter Pokemon ID to add: Pokemon Blaziken (ID 6) added to taric's Pokedex.
+-- taric's Pokedex Menu --
+1. Add Pokemon
+2. Display Pokedex
+3. Release Pokemon
+4. Evolve Pokemon
+5. Back to Main
+Your choice: Enter Pokemon ID to add: Pokemon already in the list. No changes made.
+-- taric's Pokedex Menu --
+1. Add Pokemon
+2. Display Pokedex
+3. Release Pokemon
+4. Evolve Pokemon
+5. Back to Main
+Your choice: Enter Pokemon ID to add: ID 150 not found in Honen data.
+-- taric's Pokedex Menu --
+1. Add Pokemon
+2. Display Pokedex
+3. Release Pokemon
+4. Evolve Pokemon
+5. Back to Main
+Your choice: Enter Pokemon ID to add: Pokemon Kyogre (ID 131) added to taric's Pokedex.
+-- taric's Pokedex Menu --
+1. Add Pokemon
+2. Display Pokedex
+3. Release Pokemon
+4. Evolve Pokemon
+5. Back to Main
+Your choice: Enter Pokemon ID to add: ID 136 not found in Honen data.
+-- taric's Pokedex Menu --
+1. Add Pokemon
+2. Display Pokedex
+3. Release Pokemon
+4. Evolve Pokemon
+5. Back to Main
+Your choice: Enter Pokemon ID to add: Pokemon Deoxys (ID 135) added to taric's Pokedex.
+-- taric's Pokedex Menu --
+1. Add Pokemon
+2. Display Pokedex
+3. Release Pokemon
+4. Evolve Pokemon
+5. Back to Main
+Your choice: Enter Pokemon Name to release: No Pokemon named '1' in taric's Pokedex.
+-- taric's Pokedex Menu --
+1. Add Pokemon
+2. Display Pokedex
+3. Release Pokemon
+4. Evolve Pokemon
+5. Back to Main
+Your choice: Enter Pokemon Name to release: Releasing Treecko from taric.
+-- taric's Pokedex Menu --
+1. Add Pokemon
+2. Display Pokedex
+3. Release Pokemon
+4. Evolve Pokemon
+5. Back to Main
+Your choice:
+-- Display Filter Menu --
+1. Only a certain Type
+2. Only Evolvable
+3. Only Attack above __
+4. Only HP above __
+5. Only names starting with letter(s)
+6. All of them!
+7. Back
+Your choice: ID: 2, Name: Grovyle, Type: Grass, HP: 50, Attack: 65, Can Evolve: TRUE
+ID: 4, Name: Torchic, Type: Fire, HP: 45, Attack: 60, Can Evolve: TRUE
+ID: 5, Name: Combusken, Type: Fire, HP: 60, Attack: 85, Can Evolve: TRUE
+-- Display Filter Menu --
+1. Only a certain Type
+2. Only Evolvable
+3. Only Attack above __
+4. Only HP above __
+5. Only names starting with letter(s)
+6. All of them!
+7. Back
+Your choice: Which Type? (e.g. GRASS, WATER): ID: 4, Name: Torchic, Type: Fire, HP: 45, Attack: 60, Can Evolve: TRUE
+ID: 5, Name: Combusken, Type: Fire, HP: 60, Attack: 85, Can Evolve: TRUE
+ID: 6, Name: Blaziken, Type: Fire, HP: 80, Attack: 120, Can Evolve: FALSE
+-- Display Filter Menu --
+1. Only a certain Type
+2. Only Evolvable
+3. Only Attack above __
+4. Only HP above __
+5. Only names starting with letter(s)
+6. All of them!
+7. Back
+Your choice: Enter Attack threshold: ID: 2, Name: Grovyle, Type: Grass, HP: 50, Attack: 65, Can Evolve: TRUE
+ID: 3, Name: Sceptile, Type: Grass, HP: 70, Attack: 85, Can Evolve: FALSE
+ID: 4, Name: Torchic, Type: Fire, HP: 45, Attack: 60, Can Evolve: TRUE
+ID: 5, Name: Combusken, Type: Fire, HP: 60, Attack: 85, Can Evolve: TRUE
+ID: 6, Name: Blaziken, Type: Fire, HP: 80, Attack: 120, Can Evolve: FALSE
+ID: 131, Name: Kyogre, Type: Water, HP: 100, Attack: 100, Can Evolve: FALSE
+ID: 135, Name: Deoxys, Type: Psychic, HP: 50, Attack: 150, Can Evolve: FALSE
+-- Display Filter Menu --
+1. Only a certain Type
+2. Only Evolvable
+3. Only Attack above __
+4. Only HP above __
+5. Only names starting with letter(s)
+6. All of them!
+7. Back
+Your choice: Enter HP threshold: ID: 2, Name: Grovyle, Type: Grass, HP: 50, Attack: 65, Can Evolve: TRUE
+ID: 3, Name: Sceptile, Type: Grass, HP: 70, Attack: 85, Can Evolve: FALSE
+ID: 4, Name: Torchic, Type: Fire, HP: 45, Attack: 60, Can Evolve: TRUE
+ID: 5, Name: Combusken, Type: Fire, HP: 60, Attack: 85, Can Evolve: TRUE
+ID: 6, Name: Blaziken, Type: Fire, HP: 80, Attack: 120, Can Evolve: FALSE
+ID: 131, Name: Kyogre, Type: Water, HP: 100, Attack: 100, Can Evolve: FALSE
+ID: 135, Name: Deoxys, Type: Psychic, HP: 50, Attack: 150, Can Evolve: FALSE
+-- Display Filter Menu --
+1. Only a certain Type
+2. Only Evolvable
+3. Only Attack above __
+4. Only HP above __
+5. Only names starting with letter(s)
+6. All of them!
+7. Back
+Your choice: Starting letter(s): There are no Pokemons in this Pokedex that match the criteria.
+-- Display Filter Menu --
+1. Only a certain Type
+2. Only Evolvable
+3. Only Attack above __
+4. Only HP above __
+5. Only names starting with letter(s)
+6. All of them!
+7. Back
+Your choice: Starting letter(s): There are no Pokemons in this Pokedex that match the criteria.
+-- Display Filter Menu --
+1. Only a certain Type
+2. Only Evolvable
+3. Only Attack above __
+4. Only HP above __
+5. Only names starting with letter(s)
+6. All of them!
+7. Back
+Your choice: Starting letter(s): ID: 131, Name: Kyogre, Type: Water, HP: 100, Attack: 100, Can Evolve: FALSE
+-- Display Filter Menu --
+1. Only a certain Type
+2. Only Evolvable
+3. Only Attack above __
+4. Only HP above __
+5. Only names starting with letter(s)
+6. All of them!
+7. Back
+Your choice: ID: 2, Name: Grovyle, Type: Grass, HP: 50, Attack: 65, Can Evolve: TRUE
+ID: 3, Name: Sceptile, Type: Grass, HP: 70, Attack: 85, Can Evolve: FALSE
+ID: 4, Name: Torchic, Type: Fire, HP: 45, Attack: 60, Can Evolve: TRUE
+ID: 5, Name: Combusken, Type: Fire, HP: 60, Attack: 85, Can Evolve: TRUE
+ID: 6, Name: Blaziken, Type: Fire, HP: 80, Attack: 120, Can Evolve: FALSE
+ID: 131, Name: Kyogre, Type: Water, HP: 100, Attack: 100, Can Evolve: FALSE
+ID: 135, Name: Deoxys, Type: Psychic, HP: 50, Attack: 150, Can Evolve: FALSE
+-- Display Filter Menu --
+1. Only a certain Type
+2. Only Evolvable
+3. Only Attack above __
+4. Only HP above __
+5. Only names starting with letter(s)
+6. All of them!
+7. Back
+Your choice: Back to Pokedex Menu.
+-- taric's Pokedex Menu --
+1. Add Pokemon
+2. Display Pokedex
+3. Release Pokemon
+4. Evolve Pokemon
+5. Back to Main
+Your choice: Enter Pokemon Name to evolve: No Pokemon named '5' in taric's Pokedex.
+-- taric's Pokedex Menu --
+1. Add Pokemon
+2. Display Pokedex
+3. Release Pokemon
+4. Evolve Pokemon
+5. Back to Main
+Your choice: Enter Pokemon Name to evolve: Pokemon evolved from Combusken (ID 5) to Blaziken (ID 6).
+Blaziken was already present; releasing it immediately.
+-- taric's Pokedex Menu --
+1. Add Pokemon
+2. Display Pokedex
+3. Release Pokemon
+4. Evolve Pokemon
+5. Back to Main
+Your choice: Enter Pokemon Name to evolve: Pokemon evolved from Torchic (ID 4) to Combusken (ID 5).
+-- taric's Pokedex Menu --
+1. Add Pokemon
+2. Display Pokedex
+3. Release Pokemon
+4. Evolve Pokemon
+5. Back to Main
+Your choice: Enter Pokemon Name to release: Releasing Combusken from taric.
+-- taric's Pokedex Menu --
+1. Add Pokemon
+2. Display Pokedex
+3. Release Pokemon
+4. Evolve Pokemon
+5. Back to Main
+Your choice: Back to Main Menu.
+=== Main Menu ===
+1. New Pokedex
+2. Existing Pokedex
+3. Delete a Pokedex
+4. Display owners by number of Pokemon
+5. Print All
+6. Exit
+Your choice: === The Owners we have, sorted by number of Pokemons ===
+Owner: None-Secret name (has 1 Pokemon)
+Owner: Secret name (has 1 Pokemon)
+Owner: taric (has 5 Pokemon)
+=== Main Menu ===
+1. New Pokedex
+2. Existing Pokedex
+3. Delete a Pokedex
+4. Display owners by number of Pokemon
+5. Print All
+6. Exit
+Your choice: 1) BFS
+2) Pre-Order
+3) In-Order
+4) Post-Order
+Your choice:
+Owner: Secret name
+ID: 4, Name: Torchic, Type: Fire, HP: 45, Attack: 60, Can Evolve: TRUE
+Owner: None-Secret name
+ID: 7, Name: Mudkip, Type: Water, HP: 50, Attack: 70, Can Evolve: TRUE
+Owner: taric
+ID: 2, Name: Grovyle, Type: Grass, HP: 50, Attack: 65, Can Evolve: TRUE
+ID: 3, Name: Sceptile, Type: Grass, HP: 70, Attack: 85, Can Evolve: FALSE
+ID: 6, Name: Blaziken, Type: Fire, HP: 80, Attack: 120, Can Evolve: FALSE
+ID: 131, Name: Kyogre, Type: Water, HP: 100, Attack: 100, Can Evolve: FALSE
+ID: 135, Name: Deoxys, Type: Psychic, HP: 50, Attack: 150, Can Evolve: FALSE
+=== Main Menu ===
+1. New Pokedex
+2. Existing Pokedex
+3. Delete a Pokedex
+4. Display owners by number of Pokemon
+5. Print All
+6. Exit
+Your choice: 1) BFS
+2) Pre-Order
+3) In-Order
+4) Post-Order
+Your choice:
+Owner: None-Secret name
+ID: 7, Name: Mudkip, Type: Water, HP: 50, Attack: 70, Can Evolve: TRUE
+Owner: taric
+ID: 2, Name: Grovyle, Type: Grass, HP: 50, Attack: 65, Can Evolve: TRUE
+ID: 3, Name: Sceptile, Type: Grass, HP: 70, Attack: 85, Can Evolve: FALSE
+ID: 6, Name: Blaziken, Type: Fire, HP: 80, Attack: 120, Can Evolve: FALSE
+ID: 131, Name: Kyogre, Type: Water, HP: 100, Attack: 100, Can Evolve: FALSE
+ID: 135, Name: Deoxys, Type: Psychic, HP: 50, Attack: 150, Can Evolve: FALSE
+Owner: Secret name
+ID: 4, Name: Torchic, Type: Fire, HP: 45, Attack: 60, Can Evolve: TRUE
+=== Main Menu ===
+1. New Pokedex
+2. Existing Pokedex
+3. Delete a Pokedex
+4. Display owners by number of Pokemon
+5. Print All
+6. Exit
+Your choice: Goodbye!
