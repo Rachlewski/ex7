@@ -445,7 +445,7 @@ def existing_pokedex():
         print(f"Owner '{owner_name}' not found.")
         return
     while True:
-        print(f"-- {owner_node['owner']}'s Pokedex menu --")
+        print(f"-- {owner_node['owner']}'s Pokedex Menu --")
         print("1. Add Pokemon")
         print("2. Display Pokedex")
         print("3. Release Pokemon")
