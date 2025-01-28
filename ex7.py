@@ -439,13 +439,13 @@ def existing_pokedex():
     - Evolve
     - Back
     """
-    owner_name = input("Enter owner name:")
+    owner_name = input("Owner name: ")
     owner_node = find_owner_bst(OWNER_ROOT, owner_name)
     if owner_node is None:
         print(f"Owner '{owner_name}' not found.")
         return
     while True:
-        print(f"=== {owner_node['owner']}'s Pokedex menu ===")
+        print(f"-- {owner_node['owner']}'s Pokedex menu --")
         print("1. Add Pokemon")
         print("2. Display Pokedex")
         print("3. Release Pokemon")
