@@ -63,7 +63,7 @@ def read_int_safe(prompt):
         try:
             return int(input(prompt))
         except ValueError:
-            print("Invalid input. Please enter an integer.")
+            print("Invalid input. ")
             pass
 
 def get_poke_dict_by_id(poke_id):
@@ -79,7 +79,7 @@ def get_poke_dict_by_name(name):
     Return a copy of the Pokemon dict from HOENN_DATA by name, or None if not found.
     """
     for poke in HOENN_DATA:
-        if poke["Name"] == name:
+        if poke["Name"].lower() == name.lower():
             return poke
     return None
 
@@ -225,13 +225,13 @@ def add_pokemon_to_owner(owner_node):
     """
     Prompt user for a Pokemon ID, find the data, and add to this owner's pokedex if not duplicate.
     """
-    pokemon_id = read_int_safe("Enter Pokemon ID to add:")
+    pokemon_id = read_int_safe("Enter Pokemon ID to add: ")
     pokemon_data = get_poke_dict_by_id(pokemon_id)
     if pokemon_data is None:
-        print(f"Pokemon with ID {pokemon_id} not found.")
+        print(f"ID {pokemon_id} not found in Honen data.")
         return
     if insert_pokemon(owner_node, pokemon_data):
-        print(f"Pokemon {pokemon_data['Name']} (ID {pokemon_data['ID']}) added to {owner_node['owner']}'s pokedex.")
+        print(f"Pokemon {pokemon_data['Name']} (ID {pokemon_data['ID']}) added to {owner_node['owner']}'s Pokedex.")
     else:
         print(f"Pokemon already in the list. No changes made.")
 
@@ -245,15 +245,16 @@ def release_pokemon_by_name(owner_node):
     """
     Prompt user for a Pokemon name, remove it from this owner's pokedex if found.
     """
-    to_release = input("Enter Pokemon Name to release:")
+    to_release = input("Enter Pokemon Name to release: ")
     if remove_pokemon_by_name(owner_node, to_release):
-        print(f"Releasing {to_release} from {owner_node['owner']}.")
+        print(f"Releasing {get_poke_dict_by_name(to_release)['Name']} from {owner_node['owner']}.")
+        return
     else:
-        print(f"No Pokemon named '{to_release}' in {owner_node['owner']}'s pokedex.")
+        print(f"No Pokemon named '{to_release}' in {owner_node['owner']}'s Pokedex.")
 
 def remove_pokemon_by_name(owner_node, poke_name):
     for poke in owner_node["pokedex"]:
-        if poke["Name"] == poke_name:
+        if poke["Name"].lower() == poke_name.lower():
             owner_node["pokedex"].remove(poke)
             return True
     return False
@@ -266,16 +267,16 @@ def evolve_pokemon_by_name(owner_node):
     3) Insert new
     4) If new is a duplicate, remove it immediately
     """
-    to_evolve = input("Enter Pokemon Name to evolve:")
+    to_evolve = input("Enter Pokemon Name to evolve: ")
     pokemon_data = get_poke_dict_by_name(to_evolve)
-    if len([poke for poke in owner_node["pokedex"] if poke["Name"] == to_evolve]) == 0:
-        print(f"No Pokemon named '{to_evolve}' in {owner_node['owner']}'s pokedex.")
+    if len([poke for poke in owner_node["pokedex"] if poke["Name"].lower() == to_evolve.lower()]) == 0:
+        print(f"No Pokemon named '{to_evolve}' in {owner_node['owner']}'s Pokedex.")
         return
     if pokemon_data["Can Evolve"] == "FALSE":
         print(f"Pokemon {to_evolve} cannot evolve.")
         return
     evolved_pokemon = get_poke_dict_by_id(pokemon_data["ID"] + 1)
-    print(f"Pokemnon evolved from {pokemon_data['Name']} (ID {pokemon_data['ID']}) to {evolved_pokemon['Name']} (ID {evolved_pokemon['ID']}).")
+    print(f"Pokemon evolved from {pokemon_data['Name']} (ID {pokemon_data['ID']}) to {evolved_pokemon['Name']} (ID {evolved_pokemon['ID']}).")
     remove_pokemon_by_name(owner_node, to_evolve)
     for poke in owner_node["pokedex"]:
         if poke["Name"] == evolved_pokemon["Name"]:
@@ -316,10 +317,11 @@ def sort_owners_by_num_pokemon():
         for j in range(0, n - i - 1):
             size1 = len(owners[j]['pokedex'])
             size2 = len(owners[j + 1]['pokedex'])
-            if size1 > size2 or (size1 == size2 and owners[j]['owner'] > owners[j + 1]['owner']):
+            if size1 > size2 or (size1 == size2 and owners[j]['owner'].lower() > owners[j + 1]['owner'].lower()):
                 owners[j], owners[j + 1] = owners[j + 1], owners[j]
     for owner in owners:
-        print(f"Owner:{owner['owner']} (has {len(owner['pokedex'])} Pokemon)")
+        print(f"Owner: {owner['owner']} (has {len(owner['pokedex'])} Pokemon)")
+
 
 
 ########################
@@ -335,7 +337,8 @@ def print_all_owners():
     print("2) Pre-Order")
     print("3) In-Order")
     print("4) Post-Order")
-    choice = read_int_safe("Your choice:")
+    choice = read_int_safe("Your choice: ")
+    print("")
     if choice == 1:
         bfs_traversal(OWNER_ROOT)
     elif choice == 2:
@@ -396,33 +399,35 @@ def display_filter_sub_menu(owner_node):
     6) All
     7) Back
     """
+    print("")
     while True:
         print("-- Display Filter Menu --")
-        print("1. Only a certain type")
+        print("1. Only a certain Type")
         print("2. Only Evolvable")
         print("3. Only Attack above __")
         print("4. Only HP above __")
         print("5. Only names starting with letter(s)")
         print("6. All of them!")
         print("7. Back")
-        choice = read_int_safe("Your choice:")
+        choice = read_int_safe("Your choice: ")
         if choice == 1:
-            type = input("Which Type? (e.g. GRASS, WATER):")
+            type = input("Which Type? (e.g. GRASS, WATER): ")
             display_pokemon_list([poke for poke in owner_node["pokedex"] if poke["Type"].lower() == type.lower()])
         elif choice == 2:
             display_pokemon_list([poke for poke in owner_node["pokedex"] if poke["Can Evolve"] == "TRUE"])
         elif choice == 3:
-            attack_threshold = read_int_safe("Enter Attack threshold:")
+            attack_threshold = read_int_safe("Enter Attack threshold: ")
             display_pokemon_list([poke for poke in owner_node["pokedex"] if poke["Attack"] > attack_threshold])
         elif choice == 4:
-            hp_threshold = read_int_safe("Enter HP threshold:")
+            hp_threshold = read_int_safe("Enter HP threshold: ")
             display_pokemon_list([poke for poke in owner_node["pokedex"] if poke["HP"] > hp_threshold])
         elif choice == 5:
-            letter_filter = input("Enter letters:")
-            display_pokemon_list([poke for poke in owner_node["pokedex"] if poke["Name"].startswith(letter_filter)])
+            letter_filter = input("Starting letter(s): ")
+            display_pokemon_list([poke for poke in owner_node["pokedex"] if (poke["Name"].lower()).startswith(letter_filter.lower())])
         elif choice == 6:
             display_pokemon_list(owner_node["pokedex"])
         elif choice == 7:
+            print("Back to Pokedex Menu. ")
             return
 
 
@@ -444,6 +449,7 @@ def existing_pokedex():
     if owner_node is None:
         print(f"Owner '{owner_name}' not found.")
         return
+    print("")
     while True:
         print(f"-- {owner_node['owner']}'s Pokedex Menu --")
         print("1. Add Pokemon")
@@ -461,7 +467,10 @@ def existing_pokedex():
         elif choice == 4:
             evolve_pokemon_by_name(owner_node)
         elif choice == 5:
+            print("Back to Main Menu. ")
             return
+        else:
+            print("Invalid choice. ")
 
 def main_menu():
     """
@@ -493,6 +502,7 @@ def main_menu():
         elif choice == 5:
             print_all_owners()
         elif choice == 6:
+            print("Goodbye!")
             return
         else:
             print("Invalid choice. Please try again.")
@@ -519,7 +529,7 @@ def new_pokedex():
 
 def delete_pokedex():
     global OWNER_ROOT
-    to_delete = input("Enter owner to delete:")
+    to_delete = input("Enter owner to delete: ")
     if find_owner_bst(OWNER_ROOT, to_delete) is None:
         print(f"Owner '{to_delete}' not found.")
         return
